@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--O BS está configurado-->
+
+
+    <title>Bootstrap - Formatações de Texto</title>
+  </head>
+  <body style="margin-bottom: 200px; padding: 16px;">
+
+   <!--Paragráfo Justificado-->
+   <h4>Justify</h4>
+   <p class="text-justify">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p> <br><br>
+
+
+   <!--Alinhamento de texto de acordo com a tela-->
+   <h4>Lembrete importante sobre alinhamento de texto de acordo com a tela.</h4>
+   <p>XG -> Extra Large -> >= 1200px</p>
+   <p>LG -> Large -> >= 992px</p>
+   <p>MD -> Medium -> >=768px</p>
+   <p>SM -> Small -> >=576px</p><br><br>
+
+   <!--Exemplo-->
+   <!-- class text-<tela>-<alinhamento> 
+        <tela>: sm, md, lg, xl;
+        <alinhamento>: left, center, right
+   -->
+
+    <h4>Exemplo</h4>
+    <p class="text-sm-center">SM - Centro</p>
+    <p class="text-md-center">MD - Centro</p><br><br>
+    <!--Mais exemplos e explicações com "Media Queries"-->
+
+    <!--Converter: Elementos Block para Inline-->
+    <h4 class="bg-success">[ORGINAL] Converter: Elementos Block para Inline</h4>
+    <p class="bg-success">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI.</p>
+
+    <h4 class="bg-success d-inline">[CONVERTIDO]: Elementos Block para Inline</h4>
+    <p class="bg-success d-inline">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI.</p><br><hr>
+
+    <!--Converter: Elementos Inline para Block-->
+    <span class="bg-warning">[ORGINAL]Converter: Elementos Inline para Block</span>
+    <span class="bg-warning">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI.</span><br><br>
+
+    <span class="bg-warning d-block">[CONVERTIDO] Elementos Inline para Block</span><br>
+    <span class="bg-warning  d-block">Lorem Ipsum é simplesmente uma simulação de warning da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI.</span><hr><br>
+
+    <!--Elementos Inline-Block-->
+    <h5 class="bg-success d-inline-block">Lorem ipsum</h5>
+    <h5 class="bg-success d-inline-block">Lorem ipsum dolor</h5>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
