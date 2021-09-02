@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<!-- Required meta tags -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	    <!-- Bootstrap CSS -->
+	    <link rel="stylesheet" href="css/bootstrap.min.css">
+	    <!--O BS está configurado-->
+	    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+		<title>Barra de Navegação</title>
+	</head>
+
+	<body style="width: 800px; margin: 0 auto; padding: 16px;">
+		<h4>Barra de Navegação Simples - ABAS</h4>
+
+		<p>Tipos de Navegação:<br>nav-pills, active, disable e nav-tabs<br><br> Tipos de Alinhamento:<br>justify-content-center, justify-content-end e flex-column;<br><br></p>
+
+		<ul class="nav nav-tabs justify-content-center">
+			<li class="nav-item"> <a href="" class="nav-link">A</a> </li>
+			<li class="nav-item"> <a href="" class="nav-link active">B</a> </li>
+			<li class="nav-item"> <a href="" class="nav-link">C</a> </li>
+			<li class="nav-item"> <a href="" class="nav-link">D</a> </li>
+		</ul><br><br>
+
+		<ul class="nav nav-pills flex-column">
+			<li class="nav-item"> <a href="" class="nav-link">A</a> </li>
+			<li class="nav-item"> <a href="" class="nav-link active">B</a> </li>
+			<li class="nav-item"> <a href="" class="nav-link">C</a> </li>
+			<li class="nav-item"> <a href="" class="nav-link disable">D</a> </li>
+		</ul><hr>
+
+		<h4>Barra de Navegação Simples</h4>
+
+		<nav class="navbar navbar-expand-sm navbar-light bg-warning"> <!--Só com "navbar" ele fica um abaixo do outro; O "sm" é SMALL poderia colocar também o xl ou md ou lg. Sobre a coloração da fonte pode ser light e dark.-->
+
+			<!--LOGO-->
+			<a href="" class="navbar-brand">LOGO</a> <!--Deixar a classe vazia ele aparece o sublinhado de link e tamanho um pouco superior.-->
+
+			<!--NAVEGAÇÃO-->
+			<ul class="navbar-nav ml-auto"> <!--O segundo atributo trabalha com o margin left auto que move a barra para a esquerda-->
+				<li class="navbar-item"> <a href="" class="nav-link">A</a> </li>
+				<li class="navbar-item"> <a href="" class="nav-link active">B</a> </li>
+				<li class="navbar-item"> <a href="" class="nav-link">C</a> </li>
+			</ul>			
+		</nav><hr>
+
+		<h4>Barra de Navegação Resposiva</h4>
+
+		<nav class="navbar navbar-expand-md navbar-light bg-success">
+			<!--LOGO-->
+			<a href="" class="navbar-brand">LOGO</a> 
+
+			<!--CRIAÇÃO DO MENU HAMBURGER-->
+
+			<!--O data toggle indica que um botão será presionado e o data-target indica o que será mostrado quando o botão for presionado que será identificado com um ID-->
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#Menu1">
+				<!--Criar os 3 listras: -->
+				<span class="navbar-toggler-icon"></span>
+				<!--O aparecimento do icone hamburguer se dá por causa da limitação usada no nav: "navbar-expand-sm" sendo resposanvél pela responsividade e o sm é quando ele deve aparecer-->
+			</button><!--FIM DA CRIAÇÃO DO MENU HAMBURGER-->
+
+			<!--NAVEGAÇÃO-->
+			<dir class="collapse navbar-collapse" id="Menu1"> <!--Aqui o menu não aparece quando temos o hamburguer ativado-->
+				<ul class="navbar-nav ml-auto"> <!--O segundo atributo trabalha com o margin left auto que move a barra para a esquerda-->
+					<li class="navbar-item"> <a href="" class="nav-link">A</a> </li>
+					<li class="navbar-item"> <a href="" class="nav-link active">B</a> </li>
+					<li class="navbar-item"> <a href="" class="nav-link">C</a> </li>
+				</ul>
+			</dir>			
+		</nav><hr>
+
+		<h4>Barra de Navegação com formulário</h4>
+
+		<nav class="navbar navbar-expand-md navbar-light bg-info">
+			<!--LOGO-->
+			<a href="" class="navbar-brand">LOGO</a> 
+
+			<!--CRIAÇÃO DO MENU HAMBURGER-->			
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#Menu2">
+				<span class="navbar-toggler-icon"></span>
+			</button><!--FIM DA CRIAÇÃO DO MENU HAMBURGER-->
+
+			<!--NAVEGAÇÃO-->
+			<dir class="collapse navbar-collapse" id="Menu2"> 
+				<ul class="navbar-nav ml-auto"> 
+					<li class="navbar-item"> <a href="" class="nav-link">A</a> </li>
+					<li class="navbar-item"> <a href="" class="nav-link active">B</a> </li>
+					<li class="navbar-item"> <a href="" class="nav-link">C</a> </li>
+				</ul>
+				<form class="form-inline">
+					<input type="text" class="form-control" placeholder="Pesquisar...">
+					<button class="btn btn-outline-light">Pesquise</button>
+				</form>
+			</dir>	
+		</nav><hr>
+
+		<h4>Barra de Navegação com menu dropdown</h4>
+
+
+		<nav class="navbar navbar-expand-md navbar-light bg-danger">
+			<!--LOGO-->
+			<a href="" class="navbar-brand">LOGO</a> 
+
+			<!--CRIAÇÃO DO MENU HAMBURGER-->			
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#Menu3">
+				<span class="navbar-toggler-icon"></span>
+			</button><!--FIM DA CRIAÇÃO DO MENU HAMBURGER-->
+
+			<!--NAVEGAÇÃO-->
+			<dir class="collapse navbar-collapse" id="Menu3"> 
+				<ul class="navbar-nav ml-auto"> 
+					<li class="nav-item"> <a href="" class="nav-link">A</a> </li>
+					<li class="nav-item"> <a href="" class="nav-link active">B</a> </li>
+
+					<li class="nav-item dropdown"> 
+						<a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">C</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="">CA</a>
+								<a class="dropdown-item" href="">CB</a>
+								<a class="dropdown-item" href="">CC</a>
+							</div> 
+					</li>
+
+				</ul>				
+			</dir>	
+		</nav><hr>
+
+		<h4>Alinhamento</h4>
+
+		<p>FIXED TOP or FIXED-BOTTOM or STICKY(Quando toca na parte superior ele fica fixo no topo)</p>
+
+		<nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+			<!--FIXED TOP or FIXED-BOTTOM or STICKY-->
+			<!--LOGO-->
+			<a href="" class="navbar-brand">FIXED TOP</a> 
+			<!--NAVEGAÇÃO-->
+			<ul class="navbar-nav ml-auto">
+				<li class="navbar-item"> <a href="" class="nav-link">A</a> </li>
+				<li class="navbar-item"> <a href="" class="nav-link active">B</a> </li>
+				<li class="navbar-item"> <a href="" class="nav-link">C</a> </li>
+			</ul>			
+		</nav><hr>
+
+
+
+
+
+
+
+
+
+
+
+		<!-- Optional JavaScript -->
+	    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	    <script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
