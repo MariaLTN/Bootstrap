@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Formulários</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--O BS acima está configurado-->
+
+   <!--  <link rel="stylesheet" type="text/css" href="style.css"> -->
+
+</head>
+<body style="width: 800px; margin: 0 auto; padding: 15px;">
+
+	<h4>Formatações em Formulários</h4>
+    <hr>
+
+    <p>Formulários: Classe: form-control-"opções".<br> Opções podem ser: sm, lg.</p>
+
+    <!--CAIXA DE TEXTO-->
+    <form>
+        <div class="form-group">
+            <label for="USUARIO">Usuário</label>
+            <input class="form-control form-control-lg" type="text" id="USUARIO" placeholder="Digite...">
+        </div><hr>
+
+        <div class="form-group">
+            <label for="EMAIL">Email</label>
+            <input class="form-control" type="email" id="EMAIL" placeholder="Digite..." readonly>
+            <!--Nome do read only é auto explicativo-->
+            <small class="form-text">Email será VALIDADO!</small>
+        </div><hr>
+
+        <!--SELECT-->
+        <div class="form-group">
+            <label for="REGIAO" id="REGIAO">Região</label>
+            <select class="form-control">
+                <option>Norte</option>
+                <option>Nordeste</option>
+                <option>Sul</option>
+                <option>Sudeste</option>
+                <option>Centro-oeste</option>
+            </select>
+        </div><hr>
+
+        <!--TEXTAREA-->
+        <div class="form-group">
+            <label for="MENSAGEM">Mensagem</label>
+            <textarea class="form-control" id="MENSAGEM" rows="2"></textarea>
+        </div><hr>
+
+        <!--FILE INPUT-->
+        <div class="form-group">
+            <label for="ARQUIVOS">Arquivos</label>
+            <input class="form-control-file" type="file" id="ARQUIVOS">
+        </div><hr>
+
+        <!--CUSTOM FILE INPUT-->
+        <div class="custom-file">
+            <label class="custom-file-label">Selecione arquivos</label>
+            <input class="custom-file-input" type="file" id="ARQUIVOS">
+        </div><hr>
+
+        <!--RANGE-->
+        <div class="form-control">
+            <label id="RANGE" class="">Satisfação</label>
+            <input class="" type="range" id="RANGE" min="1" max="5">
+        </div><hr>
+
+        <!--BUTTON-->
+        <input class="btn btn-success" type="submit" value="Salvar">
+    </form><hr>
+
+    <h5>Formulário Inline</h5>
+    <form class="form-inline">
+        <input class="form-control mr-3" type="text" placeholder="Usuário...">
+        <input class="form-control mr-3" type="password" placeholder="Senha...">
+        <input class="btn btn-info" type="submit" value="Entrar">
+    </form><hr>
+
+    <h5>Bootsratp para a validação dos formulários básico</h5>
+    <p>Classes: is-valid, is-invalid, invalid-feedback, valid-feedback</p>
+    <form>
+        <div class="form-group">
+            <label for="EMAIL">Email</label>
+            <input class="form-control is-valid" type="text" id="EMAIL" placeholder="Email...">
+            <div class="valid-feedback">
+                Email Válida
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="SENHA">Senha</label>
+            <input class="form-control is-invalid" type="password" placeholder="Senha...">
+            <div class="invalid-feedback">
+                Senha Inválida
+            </div>
+        </div>
+        <div>
+            <input class="btn btn-info" type="submit" value="Entrar">
+        </div>
+    </form>
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>	
+    </body>	
+</html>
