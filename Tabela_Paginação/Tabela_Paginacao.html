@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<!-- Required meta tags -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	    <!-- Bootstrap CSS -->
+	    <link rel="stylesheet" href="css/bootstrap.min.css">
+	    <!--O BS está configurado-->
+	    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+		<title>Tabela E Paginação</title>
+	</head>
+
+	<body style="margin: 0 auto;">
+
+		<h4>Tabelas: Table</h4>
+		<p>O "THEAD" não tem o scroll e não participa do scroll; E o "TBODY" tem o scroll; Ambos servem para agrupar.Por isso, normalmente usam o primeiro para o cabeçalho e a segunda para os conteúdos. Tem ainda o "TFOOT" que age como um rodapé.</p>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Produto</th>
+					<th>Marca</th>
+					<th>Preço</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>0001</td>
+					<td>Iphone 7</td>
+					<td>Apple</td>
+					<td>R$ 6.9999,00</td>
+				</tr>
+				<tr>
+					<td>0002</td>
+					<td>Iphone 8 Plus</td>
+					<td>Apple</td>
+					<td>R$ 8.9999,00</td>
+				</tr>
+				<tr>
+					<td>0001</td>
+					<td>Iphone X</td>
+					<td>Apple</td>
+					<td>R$ 11.9999,00</td>
+				</tr>
+			</tbody>
+		</table><br><hr>
+
+		<h4>Tabela Escura: table-dark:</h4>
+		<table class="table table-dark">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Produto</th>
+					<th>Marca</th>
+					<th>Preço</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>0001</td>
+					<td>Iphone 7</td>
+					<td>Apple</td>
+					<td>R$ 6.9999,00</td>
+				</tr>
+				<tr>
+					<td>0002</td>
+					<td>Iphone 8 Plus</td>
+					<td>Apple</td>
+					<td>R$ 8.9999,00</td>
+				</tr>
+				<tr>
+					<td>0001</td>
+					<td>Iphone X</td>
+					<td>Apple</td>
+					<td>R$ 11.9999,00</td>
+				</tr>
+			</tbody>
+		</table><br><hr>
+
+
+		<h4>Tabela com cabeçalho escuro: thead-dark</h4>
+		<table class="table">
+			<thead class="thead-dark">
+				<tr>
+					<th>#</th>
+					<th>Produto</th>
+					<th>Marca</th>
+					<th>Preço</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>0001</td>
+					<td>Iphone 7</td>
+					<td>Apple</td>
+					<td>R$ 6.9999,00</td>
+				</tr>
+				<tr>
+					<td>0002</td>
+					<td>Iphone 8 Plus</td>
+					<td>Apple</td>
+					<td>R$ 8.9999,00</td>
+				</tr>
+				<tr>
+					<td>0001</td>
+					<td>Iphone X</td>
+					<td>Apple</td>
+					<td>R$ 11.9999,00</td>
+				</tr>
+			</tbody>
+		</table><br><hr>
+
+		<h4>Tabela com formatação: table-striped, table-bordered, table-borderless</h4>
+		<p>O primeiro aparece com cores intercaladas. A segunda aparece com borda e a última aparece sem bordas. Existe ainda a possibilidade de fazer combinações entre elas.</p>
+		<table class="table table-striped table-border">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Produto</th>
+					<th>Marca</th>
+					<th>Preço</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>0001</td>
+					<td>Iphone 7</td>
+					<td>Apple</td>
+					<td>R$ 6.9999,00</td>
+				</tr>
+				<tr>
+					<td>0002</td>
+					<td>Iphone 8 Plus</td>
+					<td>Apple</td>
+					<td>R$ 8.9999,00</td>
+				</tr>
+				<tr>
+					<td>0001</td>
+					<td>Iphone X</td>
+					<td>Apple</td>
+					<td>R$ 11.9999,00</td>
+				</tr>
+			</tbody>
+		</table><br><hr>
+
+		<h4>Classes Contextuais: table-success, table-danger, table-...</h4>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Produto</th>
+					<th>Marca</th>
+					<th>Preço</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="table-success">
+					<td>0001</td>
+					<td>Iphone 7</td>
+					<td>Apple</td>
+					<td>R$ 6.9999,00</td>
+				</tr>
+				<tr class="table-danger">
+					<td>0002</td>
+					<td>Iphone 8 Plus</td>
+					<td>Apple</td>
+					<td>R$ 8.9999,00</td>
+				</tr>
+				<tr class="table-info">
+					<td>0001</td>
+					<td>Iphone X</td>
+					<td>Apple</td>
+					<td>R$ 11.9999,00</td>
+				</tr>
+			</tbody>
+		</table><br><hr>
+
+		<h4>Tabela Pequena: table-sm.</h4>
+		<table class="table table-sm">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Produto</th>
+					<th>Marca</th>
+					<th>Preço</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>0001</td>
+					<td>Iphone 7</td>
+					<td>Apple</td>
+					<td>R$ 6.9999,00</td>
+				</tr>
+				<tr>
+					<td>0002</td>
+					<td>Iphone 8 Plus</td>
+					<td>Apple</td>
+					<td>R$ 8.9999,00</td>
+				</tr>
+				<tr>
+					<td>0001</td>
+					<td>Iphone X</td>
+					<td>Apple</td>
+					<td>R$ 11.9999,00</td>
+				</tr>
+			</tbody>
+		</table><br><hr>
+
+
+		<h4>Tabela Responsiva: table-responsive.</h4>
+		<div class="table-responsive">
+			<table class="table">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Produto</th>
+					<th>Descrição</th>
+					<th>Marca</th>
+					<th>Preço</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>0001</td>
+					<td>Iphone 7</td>
+					<td>Telefone</td>
+					<td>Apple</td>
+					<td>R$ 6.9999,00</td>
+				</tr>
+				<tr>
+					<td>0002</td>
+					<td>Iphone 8 Plus</td>
+					<td>Telefone</td>
+					<td>Apple</td>
+					<td>R$ 8.9999,00</td>
+				</tr>
+				<tr>
+					<td>0001</td>
+					<td>Iphone X</td>
+					<td>Telefone</td>
+					<td>Apple</td>
+					<td>R$ 11.9999,00</td>
+				</tr>
+			</tbody>
+		</table>
+		</div><br><hr>
+
+		<h4>Paginação: pagination, page-item, page-link, - active, disabled:</h4>
+		<p>Nesse momento, apenas vendo a formatação de um paginação.</p>
+		<nav>
+			<ul class="pagination">
+				<li class="page-item disabled"><a class="page-link" href="">Anterior</a></li>
+				<li class="page-item active"><a class="page-link" href="">1</a></li>
+				<li class="page-item"><a class="page-link" href="">2</a></li>
+				<li class="page-item"><a class="page-link" href="">Próximo</a></li>
+			</ul>
+		</nav><br><hr>
+
+		<h4>Alinhamento: justify-content-POSIÇÃO (center ou end):</h4>
+		<p>O alinhamento padrão é a esquerda.</p>
+		<nav>
+			<ul class="pagination">
+				<li class="page-item"><a class="page-link" href="">Anterior</a></li>
+				<li class="page-item"><a class="page-link" href="">1</a></li>
+				<li class="page-item"><a class="page-link" href="">2</a></li>
+				<li class="page-item"><a class="page-link" href="">Próximo</a></li>
+			</ul>
+		</nav><br>
+
+		<nav>
+			<ul class="pagination justify-content-center">
+				<li class="page-item"><a class="page-link" href="">Anterior</a></li>
+				<li class="page-item"><a class="page-link" href="">1</a></li>
+				<li class="page-item"><a class="page-link" href="">2</a></li>
+				<li class="page-item"><a class="page-link" href="">Próximo</a></li>
+			</ul>
+		</nav><br>
+
+		<nav>
+			<ul class="pagination justify-content-end">
+				<li class="page-item"><a class="page-link" href="">Anterior</a></li>
+				<li class="page-item"><a class="page-link" href="">1</a></li>
+				<li class="page-item"><a class="page-link" href="">2</a></li>
+				<li class="page-item"><a class="page-link" href="">Próximo</a></li>
+			</ul>
+		</nav><br><hr>
+
+
+		<h4>Tamanhos: pagination-SIZE (sm, lg):</h4>
+		<p>O padrão é o tamanho "médio".</p>
+		<nav>
+			<ul class="pagination justify-content-center pagination-sm">
+				<li class="page-item"><a class="page-link" href="">Anterior</a></li>
+				<li class="page-item"><a class="page-link" href="">1</a></li>
+				<li class="page-item"><a class="page-link" href="">2</a></li>
+				<li class="page-item"><a class="page-link" href="">Próximo</a></li>
+			</ul>
+		</nav><br>
+
+		<nav>
+			<ul class="pagination justify-content-center pagination">
+				<li class="page-item"><a class="page-link" href="">Anterior</a></li>
+				<li class="page-item"><a class="page-link" href="">1</a></li>
+				<li class="page-item"><a class="page-link" href="">2</a></li>
+				<li class="page-item"><a class="page-link" href="">Próximo</a></li>
+			</ul>
+		</nav><br>
+
+		<nav>
+			<ul class="pagination justify-content-center pagination-lg">
+				<li class="page-item"><a class="page-link" href="">Anterior</a></li>
+				<li class="page-item"><a class="page-link" href="">1</a></li>
+				<li class="page-item"><a class="page-link" href="">2</a></li>
+				<li class="page-item"><a class="page-link" href="">Próximo</a></li>
+			</ul>
+		</nav><br><hr>
+
+		<h4>Setas:</h4>
+		<p>Esse modelo não é muito acessivel para os leitores de telas. Por isso, usamos o "sr-only" que significa: screen only.</p>
+		<nav>
+			<ul class="pagination justify-content-center">
+				<li class="page-item"><a class="page-link" href="">
+					<span>&laquo;</span><span class="sr-only">Anterior</span></a></li>
+				<li class="page-item"><a class="page-link" href="">1</a></li>
+				<li class="page-item"><a class="page-link" href="">2</a></li>
+				<li class="page-item"><a class="page-link" href=""><span>&raquo;</span><span class="sr-only">Próximo</span></a></li>
+			</ul>
+		</nav><br><hr>
+
+
+		<!-- Optional JavaScript -->
+	    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	    <script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
