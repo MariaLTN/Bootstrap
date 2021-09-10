@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!--O BS está configurado-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <style type="text/css">
+            /*h2 {
+                color: purple;
+                text-align: center;
+                padding-bottom: 15px;
+            }*/
+        </style>
+
+
+        <title>Jumbotron + Alinhamento de Imagens</title>
+    </head>
+
+    <body style="margin-bottom: 200px; padding: 16px;">
+
+        <p>"<strong>Jumbotron</strong>" é posivel definir uma área de destaque para o site. Exemplo: Um texto bem grande, uma área cinza abaixo...</p>
+
+        <h2 class="border-bottom">Jumbotron</h2>        
+        <div class="jumbotron"> <!--Area cinza-->       
+            <div class="container">
+                <h4 class="display-4">Qu'est-ce que le Lorem Ipsum?</h4>
+                <p class="lead">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p><br><p class="">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+                <a class="btn btn-outline-info" href="">Leia mais...</a>
+            </div>          
+        </div><hr><br>
+
+        <h2 class="border-bottom">Estrutura para Imagens</h2>       
+        <div class="media">
+            <img class="mr-3" src="https://source.unsplash.com/random/60x60">
+            <div class="media-body">
+                <h4 class="">Qu'est-ce que le Lorem Ipsum?</h4>
+                <p class="">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p
+                ><a class="btn btn-outline-info" href="">Leia mais...</a>
+            </div>
+        </div><hr><br>
+
+        <h2 class="border-bottom">Alinhamento: align-self-ALINHAMENTO (start, center, end)</h2>     
+        <div class="media">
+            <img class="mr-3 align-self-center" src="https://source.unsplash.com/random/60x60">
+            <div class="media-body border">
+                <h4 class="">align-self-center</h4>
+                <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>              
+            </div>
+        </div><br>
+        <div class="media">
+            <img class="mr-3 align-self-end" src="https://source.unsplash.com/random/60x60">
+            <div class="media-body border">
+                <h4 class="">align-self-end</h4>
+                <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>              
+            </div>
+        </div><br>
+        <p><strong>Observação:</strong>Ao alinhar essa imagem com o paragráfo, pode dar uma leve impressão que a imagem não está totalmente alinhada. Isso pode ser visto através dos "border", note que após os textos tem um espaçamento entre a última linha e a borda inferior. Então a imagem está alinhada ao container texto. Para acontecer um alinhamento visual pode ser necessária retirar esse espaçamento. Que nem o exemplo abaixo: Usando o "mb-0" no paragrafo.</p>
+        <div class="media">
+            <img class="mr-3 align-self-center" src="https://source.unsplash.com/random/60x60">
+            <div class="media-body border">
+                <h4 class="">align-self-center</h4>
+                <p class="mb-0">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+            </div>
+        </div><br>
+        <div class="media">
+            <img class="mr-3 align-self-end" src="https://source.unsplash.com/random/60x60">
+            <div class="media-body border">
+                <h4 class="">align-self-end</h4>
+                <p class="mb-0">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>       
+            </div>
+        </div><hr><br>
+
+        <h2 class="border-bottom">Listas com Imagens</h2>     
+        <ul class="list-unstyled">
+        	<li class="media border-bottom pb-2 pt-2">
+        		<img class="mr-3 align-self-center" src="https://source.unsplash.com/random/80x80">
+        		<div class="media-body">
+        			<h5>Qu'est-ce que le Lorem Ipsum? 1</h5>
+        			<p class="mb-0">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+        		</div>
+        	</li>
+        	<li class="media border-bottom pb-2 pt-2">
+        		<img class="mr-3 align-self-center" src="https://source.unsplash.com/random/80x80">
+        		<div class="media-body">
+        			<h5>Qu'est-ce que le Lorem Ipsum? 2</h5>
+        			<p class="mb-0">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+        		</div>
+        	</li>
+        	<li class="media border-bottom pb-2 pt-2">
+        		<img class="mr-3 align-self-center" src="https://source.unsplash.com/random/80x80">
+        		<div class="media-body">
+        			<h5>Qu'est-ce que le Lorem Ipsum? 3 </h5>
+        			<p class="mb-0">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+        		</div>
+        	</li>
+        	<li class="media border-bottom pb-2 pt-2">
+        		<img class="mr-3 align-self-center" src="https://source.unsplash.com/random/80x80">
+        		<div class="media-body">
+        			<h5>Qu'est-ce que le Lorem Ipsum? 4</h5>
+        			<p class="mb-0">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+        		</div>
+        	</li>
+        </ul>
+        <hr><br>
+
+        <!--<h2 class="border-bottom">Listas com Imagens</h2>     
+        <div class="media">
+            <img class="mr-3 align-self-end" src="https://source.unsplash.com/random/60x60">
+            <div class="media-body">
+                <h4 class="">Qu'est-ce que le Lorem Ipsum?</h4>
+                <p class="">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p
+                ><a class="btn btn-outline-info" href="">Leia mais...</a>
+            </div>
+        </div><hr><br>-->
+
+
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
