@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!--O BS está configurado-->
+
+        <style type="text/css">
+
+            .Marcador{
+                background: #CEECF5;
+                border: 1px solid #086A87;
+            }
+
+            .Marcador-Container{
+                background: #E6E0F8;
+                border:1px solid #4C0B5F;
+            }
+
+        </style>
+
+        <title>Configurações no Grid</title>
+    </head>
+
+    <body>
+        <h4>Configurações no Grid</h4>
+        <p><strong>Dentro da "row" ficará as 12 colunas e é a responsável pelo sistema de grid;</strong>Temos o "container"(que deixa um espaço na lateral) e "container-fluid"(que preenche toda a area lateral);</p>
+
+        <div class="container Marcador-Container">
+
+            <h4>Largura Fixa</h4>
+            <p>Se deixarmos apenas o "col" teremos uma largura fixa,</p>
+            <div class="row">
+                <div class="Marcador col">Área 1</div>
+                <div class="Marcador col">Área 2</div>
+                <div class="Marcador col">Área 3</div>
+                <div class="Marcador col">Área 4</div>                
+            </div><br>
+
+            <h4>Largura Automática (auto-layout)</h4>
+            <p>Se colocarmos o "col-tamanho" só em algumas o restante do grid será redistribuido</p>
+            <div class="row">
+                <div class="Marcador col-4">Área 1</div>
+                <div class="Marcador col-6">Área 2</div>
+                <div class="Marcador col">Área 3</div>
+            </div><br>
+
+            <h4>Largura igual empilhada</h4>
+            <p>Definir o dispositivo que queremos atingir: "col-sm"</p>
+            <div class="row">
+                <div class="Marcador col-sm">Área 1</div>
+                <div class="Marcador col-sm">Área 2</div>
+                <div class="Marcador col-sm">Área 3</div>
+            </div><br>
+
+            <h4>Ordenando</h4>
+            <p>Caso quisermos mudar a ordem de aparecimento das Areas podemos usar a "order-(preferencia)"</p>
+            <div class="row">
+                <div class="Marcador col order-3">Área 1</div>
+                <div class="Marcador col order-2">Área 2</div>
+                <div class="Marcador col order-1">Área 3</div>
+            </div><br>
+
+            <h4>Offset</h4>
+            <p>Espaçamento entre os elementos. Como o "col-md-6" então a centralização seria "offset-md-3". Já que ele ocupa inicialmente 6 grid de 12, e para colocar esses 6 grid no meio, precisamos "empurrar 3 colunas da esquerda para direita". Conforme a imagem <strong>Imagem Referencia do Bootsrap Grid do arquivo</strong>.
+            <div class="row">
+                <div class="Marcador col-md-6 offset-md-3">Login</div>
+            </div><br>
+
+            <h4>Offset múltiplos alinhamentos</h4>
+            <div class="row">
+                <div class="Marcador col-md-3">Conteúdo 1</div>
+                <div class="Marcador col-md-3 offset-md-6">Conteúdo 2</div>
+            </div><br>
+
+            <h4>Aninhamento</h4>
+            <div class="row">
+                <div class="col-md-6"style="border: 2px solid red;">
+                    Conteúdo Exterior
+                    <div class="row" style="border: 2px solid blue;">
+                        <div class="col-md-6 Marcador">
+                        Conteúdo Interior</div>
+                        <div class="col-md-6 Marcador">
+                        Conteúdo Interior</div>
+                    </div>
+                </div>
+            </div><br>                   
+        </div>
+      
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
