@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!--O BS está configurado-->
+
+        <style type="text/css">
+
+            .Marcador{
+                background: #FE9D9e;
+                border: 1px solid #F94646;
+                height: 120px;
+            }
+
+            .Borda {border: 1px solid blue;}
+
+        </style>
+
+        <title>Alinhamento no Grid</title>
+    </head>
+
+    <body>
+        <h4>Alinhamento no Grid</h4>
+        <p><strong>Dentro da "row" ficará as 12 colunas e é a responsável pelo sistema de grid;</strong>Temos o "container"(que deixa um espaço na lateral) e "container-fluid"(que preenche toda a area lateral);</p>
+
+        <p>Esses alinhamentos são utilizando <strong>FLEXBOX</strong></p>
+
+        <div class="container Marcador-Container">
+
+            <h4>Alinhamento Vertical (align-items-ALINHAMENTO: start, center, end)</h4>
+            <div class="Marcador row align-items-center">
+                <div class="col Borda">Área 1</div>
+                <div class="col Borda">Área 2</div>
+                <div class="col Borda">Área 3</div>
+            </div><br>
+
+            <h4>Alinhamento Vertical (align-self-ALINHAMENTO: start, center, end)</h4>
+            <div class="row Marcador">
+                <div class="col Borda align-self-end">Área 1</div>
+                <div class="col Borda align-self-center">Área 2</div>
+                <div class="col Borda align-self-start">Área 3</div>
+            </div><br>
+
+            <h4>Alinhamento Horizontal Colunas (justify-content-ALINHAMENTO: start, center, end)</h4>
+            <div class="row justify-content-end">
+                <div class="Marcador col-2">Área 1</div>
+                <div class="Marcador col-2">Área 2</div>
+                <div class="Marcador col-2">Área 3</div>
+            </div><br>
+
+            <h4>Distribuição (justify-content-ALINHAMENTO: around, between, end)</h4>
+            <div class="row Borda justify-content-between">
+                <div class="Marcador col-3">Área 1</div>
+                <div class="Marcador col-3">Área 2</div>
+                <div class="Marcador col-3">Área 3</div>
+            </div><br>
+
+            <h4>Removendo Espaçamentos</h4>
+            <div class="row no-gutters">
+                <div class="Marcador col-3">Área 1</div>
+                <div class="Marcador col-3">Área 2</div>
+                <div class="Marcador col-3">Área 3</div>
+            </div><br>
+           
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
