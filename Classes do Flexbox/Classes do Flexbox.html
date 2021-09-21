@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!--O BS está configurado-->
+
+        <style type="text/css">
+
+            .Caixa {background: #F5F5F5; height: 200px;}
+            .Item {border: 1px solid black; padding: 5px;}
+
+        </style>
+
+        <title>Classes do Flexbox</title>
+    </head>
+
+    <body>
+
+        <div class="container">
+            
+            <h4>Flex Container e Flex Itens (d-flex, flex-row, flex-column, flex-row-reverse)</h4>
+            <p>Usado: flex-row-reverse</p>
+            <div class="Caixa d-flex flex-row-reverse">
+                <div class="Item">Flex Item 1</div>
+                <div class="Item">Flex Item 2</div>
+                <div class="Item">Flex Item 3</div>
+            </div><br><br>
+
+            <h4>Alinhamento Horizontal: d-flex + justify-content-ALINHAMENTO (start, center, end, around, between)</h4>
+            <p>Usado: justify-content-around</p>
+            <div class="Caixa d-flex justify-content-around">
+                <div class="Item">Flex Item 1</div>
+                <div class="Item">Flex Item 2</div>
+                <div class="Item">Flex Item 3</div>
+            </div><br><br>
+
+            <h4>Colunas d-flex + (flex-row, flex-column-reverse)</h4>
+            <p>Usado: justify-column-around</p>
+            <div class="Caixa d-flex flex-column-reverse">
+                <div class="Item">Flex Item 1</div>
+                <div class="Item">Flex Item 2</div>
+                <div class="Item">Flex Item 3</div>
+            </div><br><br>
+
+            <h4>Alinhamento Vertical: d-flex + align-items-ALINHAMENTO (start, center, end, baseline, stretch)</h4>
+            <p><strong>Baseline</strong>: Leva em consideração o conteudo dos itens para fazer o alinhamento; </p> 
+            <div class="Caixa d-flex align-items-baseline">
+                <div class="Item" style="padding-top: 90px;">Flex Item 1</div>
+                <div class="Item">Flex Item 2 Flex Item 2 Flex Item 2 Flex Item 2 Flex Item 2 Flex Item 2 Flex Item 2 Flex Item 2 </div>
+                <div class="Item"  style="padding-bottom: 30px;">Flex Item 3</div>
+            </div><br>
+
+            <p>O <strong>Center</strong>, por exemplo, apenas centraliza pelo tamanho dos items.</p>
+            <div class="Caixa d-flex align-items-center">
+                <div class="Item" style="padding-top: 90px;">Flex Item 1</div>
+                <div class="Item">Flex Item 2 Flex Item 2 Flex Item 2 Flex Item 2 Flex Item 2 Flex Item 2 Flex Item 2 Flex Item 2 </div>
+                <div class="Item"  style="padding-bottom: 30px;">Flex Item 3</div>
+            </div><br><br>
+
+            <h4>Alinhamento Self: d-flex + align-self-ALINHAMENTO (start, center, end, baseline, stretch)</h4>
+            <div class="Caixa d-flex">
+                <div class="Item align-self-end">Flex Item END</div>
+                <div class="Item align-self-center">Flex Item CENTER</div>
+                <div class="Item align-self-baseline">Flex Item BASELINE</div>
+                <div class="Item align-self-start">Flex Item START</div>
+                <div class="Item align-self-stretch">Flex Item STRETCH</div>
+            </div><br><br>
+
+        </div>        
+           
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
