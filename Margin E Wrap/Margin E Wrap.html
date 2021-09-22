@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!--O BS está configurado-->
+
+        <style type="text/css">
+
+            .Caixa {background: #F5F5F5; height: 200px;}
+            .Item {border: 1px solid black; padding: 5px;}
+
+        </style>
+
+        <title>Margin E Wrap</title>
+    </head>
+
+    <body>
+
+        <div class="container">
+            
+            <h4>Margin right/left auto (mr-auto, ml-auto)</h4>
+            <p>Usado: mr-auto e ml-auto no Item 2.</p>
+            <div class="Caixa d-flex">
+                <div class="Item ">Flex Item 1</div>
+                <div class="Item mr-auto ml-auto">Flex Item 2</div>
+                <div class="Item ">Flex Item 3</div>
+            </div><br><br>
+
+             <h4>Margin bottom/top auto (mb-auto, mt-auto)</h4>
+            <p>Usado: mb-auto no Item 1; mt-auto no Item 2; e os dois no Item 3.</p>
+            <div class="Caixa d-flex">
+                <div class="Item mb-auto">Flex Item 1</div>
+                <div class="Item mt-auto">Flex Item 2</div>
+                <div class="Item mb-auto mt-auto">Flex Item 3</div>
+            </div><br><br>
+
+            <h4>Wrap (flex-wrap, flex-nowrap)</h4>
+            <p>Usado: flex-wrap na div pai.</p>
+            <div class="Caixa d-flex flex-wrap ">
+                <div class="Item">Flex Item 1</div>
+                <div class="Item">Flex Item 2</div>
+                <div class="Item">Flex Item 3</div>
+                <div class="Item">Flex Item 4</div>
+                <div class="Item">Flex Item 5</div>
+                <div class="Item">Flex Item 6</div>
+                <div class="Item">Flex Item 7</div>
+                <div class="Item">Flex Item 8</div>
+                <div class="Item">Flex Item 9</div>
+            </div><br><br>
+
+            
+
+        </div>        
+           
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
